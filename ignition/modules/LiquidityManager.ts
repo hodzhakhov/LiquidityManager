@@ -6,8 +6,6 @@ import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 const npmAddress = "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
 
 const LiquidityManagerModule = buildModule("LiquidityManagerModule", (m) => {
-  const address = m.getParameter("npmAddress", npmAddress);
-
   const liquidityManager = m.contract("LiquidityManager", [npmAddress]);
 
   return { liquidityManager };
