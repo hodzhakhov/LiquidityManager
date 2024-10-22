@@ -1,6 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "dotenv/config";
+import "hardhat-deal";
 
 export const ARBITRUM_ENDPOINT = "0x3c2269811836af69497E5F486A85D7316753cf62";
 export const ARBITRUM_CHAINID = 110;
